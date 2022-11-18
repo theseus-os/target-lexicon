@@ -1290,7 +1290,8 @@ impl FromStr for Environment {
             "sim" => Sim,
             "softfloat" => Softfloat,
             "spe" => Spe,
-            _ => return Err(()),
+            _ => Unknown, // Theseus temporary override
+            // _ => return Err(()),
         })
     }
 }
